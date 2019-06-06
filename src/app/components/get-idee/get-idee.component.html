@@ -1,0 +1,21 @@
+<div>
+  <h1>
+    Les idées existantes
+  </h1>
+
+  <ul>
+    <li *ngFor="let idee of idees" >
+      -- id: {{idee.idIdee}}
+      <br/>
+      -- date de création: {{idee.dateCreation | date:'medium'}}
+      <br/>
+      -- idée: {{idee.idee}}
+      <br/>
+      -- titre: {{idee.titre}}
+      <br/>
+      -- genre: {{idee.genre.genre}}
+      <br/>
+      -- type : {{idee.typeIdee.typeIdee}}
+    </li>
+  </ul> 
+</div>

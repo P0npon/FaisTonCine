@@ -1,0 +1,25 @@
+<div class="card col-sm-8 col-sm-offset-2">
+  <form [formGroup]="ideeForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" class="form-control" formControlName="title">
+    </div>
+    <div class="form-group">
+      <label for="idee">Idee</label>
+      <input type="text" id="idee" class="form-control" formControlName="idee">
+    </div>
+    <div class="form-group">
+      <label for="genre">Genre</label>
+        <select (change)="selectChangeHandlerGenre($event)">
+          <option *ngFor="let genre of genres" [value]="genre.idGenre">{{genre.genre}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="typeIdee">Type idee</label>
+      <select (change)="selectChangeHandlerTypeIdee($event)">
+          <option *ngFor="let typeIdee of typeIdees" [value]="typeIdee.idTypeIdee">{{typeIdee.typeIdee}}</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Soumettre</button>
+  </form>
+</div>
