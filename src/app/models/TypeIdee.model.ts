@@ -1,5 +1,6 @@
 export class TypeIdee {
   constructor(
-  	public idTypeIdee : number
+    public idTypeIdee : number,
+    public typeIdee: string
   ) {}
 }

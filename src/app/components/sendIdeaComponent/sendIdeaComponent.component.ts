@@ -72,10 +72,12 @@ export class SendIdeaComponent implements OnInit {
 
     const newGenre = new Genre(
       this.selectedGenre,
+      null
     );
 
     const newTypeIdee = new TypeIdee(
       this.selectedTypeIdee,
+      null
     );
 
     const newIdee = new Idee(

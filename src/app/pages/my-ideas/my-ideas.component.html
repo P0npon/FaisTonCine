@@ -1,15 +1,36 @@
-  <div class="container-fluid">
+  <!--<div class="container-fluid">
+    <br/>
+      <h1 style="margin-left:20px">Les idées partagées</h1>
+      <hr style="background-color: black">
+    <br/>
+
     <div class="row">
-    <div id="right" class="col-sm-8">
-      <app-get-idee></app-get-idee>
+      <div class="col-sm-8">
+        <app-new-idee></app-new-idee>
+      </div>
     </div>
-    <div id="left" class="col-sm-4">
-      <app-new-idee></app-new-idee>
+
+    <div class="row">
+      <div id="left" class="col-sm-4">
+          <app-get-idee></app-get-idee>
+      </div>
     </div>
-    <div id="down" class="col-sm-12">
-    	<div class="card" style="width: 100%;height: 100%;">
-    		 Espace commentaire
-    	</div>
+
+    <div class="row">
+      <div class="card" style="width: 100%;height: 100%;">
+        Espace commentaire
+      </div>
     </div>
-  </div>
- </div>
+
+ </div>-->
+
+ <div class="ftc-idea-container">
+    <br/>
+        <h1 style="margin-left: 20px">Les idées partagées</h1>
+        <hr style="margin-left: 20px; margin-right: 20px; background-color: black">
+    <br/>
+    <app-new-idee></app-new-idee>
+    <br/>
+    <app-get-idee></app-get-idee>
+    <br/>
+</div>
