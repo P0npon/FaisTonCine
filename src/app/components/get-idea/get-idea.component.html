@@ -1,0 +1,21 @@
+<div class="card" style="width: 100%;height: 100%">
+  <div class="panel-body" style="overflow-y: scroll;">
+    <div class="mid-width wrapItems">
+        <div *ngFor="let idee of idees" >
+          <div class="card" style="padding: 10px">
+            <div>
+            <h2 style="display: inline;">{{ 'get-idea.title' | translate }} {{idee.titre}} </h2>
+            <p style="display: inline;">{{ 'get-idea.creation-date' | translate }} {{idee.dateCreation | date:'medium'}} </p>
+            <p style="display: inline;">{{ 'get-idea.genre' | translate }} {{idee.genre.genre}} </p>
+            <p style="display: inline;">{{ 'get-idea.type' | translate }} {{idee.typeIdee.typeIdee}} </p>
+            </div>
+        <div class="card" style="padding: 10px">
+        <p>
+        {{idee.idee}}
+        </p>
+      </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>

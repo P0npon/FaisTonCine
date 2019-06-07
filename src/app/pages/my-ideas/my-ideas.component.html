@@ -5,6 +5,16 @@
     <br/>
 
     <div class="row">
+    <div id="right" class="col-sm-8">
+      <ftc-get-idea></ftc-get-idea>
+    </div>
+    <div id="left" class="col-sm-4">
+      <ftc-send-idea></ftc-send-idea>
+    </div>
+    <div id="down" class="col-sm-12">
+    	<div class="card" style="width: 100%;height: 100%;">
+    		 {{ 'my-ideas.comment-space' | translate | ucfirst }}
+    	</div>
       <div class="col-sm-8">
         <app-new-idee></app-new-idee>
       </div>
@@ -26,11 +36,11 @@
 
  <div class="ftc-idea-container">
     <br/>
-        <h1 style="margin-left: 20px">Les idées partagées</h1>
+        <h1 style="margin-left: 20px">{{ 'my-ideas.shared-ideas' | translate | ucfirst }}</h1>
         <hr style="margin-left: 20px; margin-right: 20px; background-color: black">
     <br/>
-    <app-new-idee></app-new-idee>
+    <ftc-send-idea></ftc-send-idea>
     <br/>
-    <app-get-idee></app-get-idee>
+    <ftc-get-idea></ftc-get-idea>
     <br/>
 </div>

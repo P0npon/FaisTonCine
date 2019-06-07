@@ -8,9 +8,9 @@ import { TypeIdee } from '../../models/TypeIdee.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-new-idee',
-  templateUrl: './sendIdeaComponent.component.html',
-  styleUrls: ['./sendIdeaComponent.component.scss']
+  selector: 'ftc-send-idea',
+  templateUrl: './send-idea.component.html',
+  styleUrls: ['./send-idea.component.scss']
 })
 export class SendIdeaComponent implements OnInit {
 

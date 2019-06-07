@@ -5,27 +5,27 @@
 <div style="width: 100%;height: 100%;padding: 10px;">
   <form [formGroup]="ideeForm" (ngSubmit)="onSubmitForm()">
     <div class="form-group">
-      <h4 for="title" style="text-align: center">Title</h4>
-      <input type="text" id="title" class="form-control" formControlName="title" placeholder="Titre de l'idée">
+      <h4 for="title" style="text-align: center">{{ 'send-idea.title' | translate | ucfirst }}</h4>
+      <input type="text" id="title" class="form-control" formControlName="title">
     </div>
     <div class="form-group">
-      <h4 for="idee" style="text-align: center">Idee</h4>
-      <textarea style="height: 100px"id="idee" class="form-control" formControlName="idee" placeholder="Description de l'idée"></textarea>
+      <h4 for="idee" style="text-align: center">{{ 'send-idea.idea' | translate | ucfirst }}</h4>
+      <textarea style="height: 100px"id="idee" class="form-control" formControlName="idee"></textarea>
     </div>
     <div class="form-group">
-      <h4 for="genre" style="text-align: center">Genre</h4>
+      <h4 for="genre" style="text-align: center">{{ 'send-idea.genre' | translate | ucfirst }}</h4>
         <select class="form-control" (change)="selectChangeHandlerGenre($event)">
           <option *ngFor="let genre of genres" [value]="genre.idGenre">{{genre.genre}}</option>
         </select>
     </div>
     <div class="form-group">
-      <h4 for="typeIdee" style="text-align: center">Type idee</h4>
+      <h4 for="typeIdee" style="text-align: center">{{ 'send-idea.type' | translate | ucfirst }}</h4>
       <select class="form-control" (change)="selectChangeHandlerTypeIdee($event)">
           <option *ngFor="let typeIdee of typeIdees" [value]="typeIdee.idTypeIdee">{{typeIdee.typeIdee}}</option>
         </select>
     </div>
     <div style="text-align: center;">
-    <button type="submit" class="btn btn-primary">Soumettre une nouvelle idée</button>
+    <button type="submit" class="btn btn-primary">{{ 'send-idea.submit' | translate | ucfirst }}</button>
     </div>
   </form>
 </div>

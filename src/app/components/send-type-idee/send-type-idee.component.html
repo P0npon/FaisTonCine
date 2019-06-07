@@ -1,9 +1,9 @@
 <form [formGroup]="typeIdeeForm" (ngSubmit)="onSubmitForm()" style="margin-left: 35%; margin-right: 35%; padding: 15px; border: 1px solid #DCDCDC	; border-radius: 10px">
   <div class="form-group">
-    <h4 for="typeIdee" style="text-align: center">Typée idée</h4>
-    <input type="text" id="typeIdee" class="form-control" formControlName="typeIdee" placeholder="Libellé du type de l'idée">
+    <h4 for="typeIdee" style="text-align: center">{{ 'send-type-idea.libelle' | translate | ucfirst }}</h4>
+    <input type="text" id="typeIdee" class="form-control" formControlName="typeIdee">
   </div>
   <div style="text-align: center;">
-    <button type="submit" class="btn btn-primary">Ajouter un nouveau type d'idée</button>
+    <button type="submit" class="btn btn-primary">{{ 'send-type-idea.add-new-type-idea' | translate | ucfirst }}</button>
   </div>
 </form>

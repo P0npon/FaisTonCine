@@ -1,9 +1,9 @@
 <form [formGroup]="genreForm" (ngSubmit)="onSubmitForm()" style="margin-left: 35%; margin-right: 35%; padding: 15px; border: 1px solid #DCDCDC	; border-radius: 10px">
   <div class="form-group">
-    <h4 for="libelle" style="text-align: center">Libellé Genre</h4>
-    <input type="text" id="libelle" class="form-control" formControlName="libelle" placeholder="Libellé de l'idée">
+    <h4 for="libelle" style="text-align: center">{{ 'send-genre.libelle' | translate | ucfirst }}</h4>
+    <input type="text" id="libelle" class="form-control" formControlName="libelle">
   </div>
   <div style="text-align: center;">
-    <button type="submit" class="btn btn-primary">Ajouter un nouveau genre</button>
+    <button type="submit" class="btn btn-primary">{{ 'send-genre.add-new-genre' | translate | ucfirst }}</button>
   </div>
 </form>

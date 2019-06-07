@@ -1,0 +1,55 @@
+{
+    "hello-world": "hello world!",
+    "header": {
+        "home": "home",
+        "my-scenario": "my scenario",
+        "my-ideas": "my ideas",
+        "rate-scenario": "rate scenario",
+        "admin": "admin",
+        "login": "connexion",
+        "contact": "contact"
+    },
+    "login": {
+        "tips": "connexion!"
+    },
+    "scenario": {
+        "tips": "scenario!"
+    },
+    "my-ideas": {
+        "tips": "my ideas!",
+        "comment-space": "comment space",
+        "shared-ideas": "shared ideas"
+    },
+    "rate-scenario": {
+        "tips": "rate scenario!"
+    },
+    "contact": {
+        "tips": "contact!"
+    },
+    "admin": {
+        "tips": "admin!",
+        "title": "administrator menu"
+    },
+    "get-idea": {
+        "title": "-- title: ",
+        "creation-date": "-- creation date: ",
+        "genre": "-- genre: ",
+        "type": "-- type: "
+    },
+    "send-idea": {
+        "title": "title",
+        "idea": "idea",
+        "genre": "genre",
+        "type": "idea type",
+        "submit": "submit a new idea"
+    },
+    "send-genre": {
+        "libelle": "genre name",
+        "add-new-genre": "add new genre"
+    },
+    "send-type-idea": {
+        "libelle": "idea's type",
+        "add-new-type-idea": "add new idea's type"
+    },
+    "switch-language": "switch to french"
+}

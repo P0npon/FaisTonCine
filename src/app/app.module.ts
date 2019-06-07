@@ -7,8 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { UpperCaseFirstPipe } from './pipes/ucfirst.pipe';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SendIdeaComponent } from './components/sendIdeaComponent/sendIdeaComponent.component';
+import { SendIdeaComponent } from './components/send-idea/send-idea.component';
 import { IdeeService } from './services/IdeeService';
+import { SwitchLanguageComponent } from './components/switch-language/switch-language.component';
 
 import { LoginComponent } from './pages/login/login.component';
 import { MyScenarioComponent } from './pages/my-scenario/my-scenario.component';
@@ -21,7 +22,7 @@ import { AdminComponent } from './pages/admin/admin.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import { GetIdeeComponent } from './components/get-idee/get-idee.component';
+import { GetIdeaComponent } from './components/get-idea/get-idea.component';
 import { SendGenreComponent } from './components/send-genre/send-genre.component';
 import { SendTypeIdeeComponent } from './components/send-type-idee/send-type-idee.component';
 import { GenreService } from './services/GenreService';
@@ -39,7 +40,8 @@ import { TypeIdeeService } from './services/TypeIdeeService';
     AdminComponent,
     UpperCaseFirstPipe,
     SendIdeaComponent,
-    GetIdeeComponent,
+    GetIdeaComponent,
+    SwitchLanguageComponent,
     SendGenreComponent,
     SendTypeIdeeComponent,
   ],
