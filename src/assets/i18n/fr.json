@@ -17,7 +17,8 @@
     },
     "my-ideas": {
         "tips": "mes idées!",
-        "comment-space": "espace commentaire"
+        "comment-space": "espace commentaire",
+        "shared-ideas": "les idées partagées"
     },
     "rate-scenario": {
         "tips": "noter des scenario!"
@@ -26,7 +27,8 @@
         "tips": "contact!"
     },
     "admin": {
-        "tips": "admin!"
+        "tips": "admin!",
+        "title": "menu d'aministration"
     },
     "get-idea": {
         "title": "-- titre: ",
@@ -39,7 +41,15 @@
         "idea": "idée",
         "genre": "genre",
         "type": "type d'idée",
-        "submit": "soumettre"
+        "submit": "soumettre une nouvelle idée"
+    },
+    "send-genre": {
+        "libelle": "libellé genre",
+        "add-new-genre": "ajouter un nouveau genre"
+    },
+    "send-type-idea": {
+        "libelle": "typée d'idée",
+        "add-new-type-idea": "ajouter un nouveau type d'idée"
     },
     "switch-language": "passer en anglais"
 }

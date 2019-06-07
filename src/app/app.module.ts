@@ -23,6 +23,10 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { GetIdeaComponent } from './components/get-idea/get-idea.component';
+import { SendGenreComponent } from './components/send-genre/send-genre.component';
+import { SendTypeIdeeComponent } from './components/send-type-idee/send-type-idee.component';
+import { GenreService } from './services/GenreService';
+import { TypeIdeeService } from './services/TypeIdeeService';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,9 @@ import { GetIdeaComponent } from './components/get-idea/get-idea.component';
     UpperCaseFirstPipe,
     SendIdeaComponent,
     GetIdeaComponent,
-    SwitchLanguageComponent
+    SwitchLanguageComponent,
+    SendGenreComponent,
+    SendTypeIdeeComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +61,7 @@ import { GetIdeaComponent } from './components/get-idea/get-idea.component';
         }
     })
   ],
-  providers: [IdeeService],
+  providers: [IdeeService, GenreService, TypeIdeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

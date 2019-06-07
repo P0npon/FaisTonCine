@@ -17,7 +17,8 @@
     },
     "my-ideas": {
         "tips": "my ideas!",
-        "comment-space": "comment space"
+        "comment-space": "comment space",
+        "shared-ideas": "shared ideas"
     },
     "rate-scenario": {
         "tips": "rate scenario!"
@@ -26,7 +27,8 @@
         "tips": "contact!"
     },
     "admin": {
-        "tips": "admin!"
+        "tips": "admin!",
+        "title": "administrator menu"
     },
     "get-idea": {
         "title": "-- title: ",
@@ -39,7 +41,15 @@
         "idea": "idea",
         "genre": "genre",
         "type": "idea type",
-        "submit": "submit"
+        "submit": "submit a new idea"
+    },
+    "send-genre": {
+        "libelle": "genre name",
+        "add-new-genre": "add new genre"
+    },
+    "send-type-idea": {
+        "libelle": "idea's type",
+        "add-new-type-idea": "add new idea's type"
     },
     "switch-language": "switch to french"
 }

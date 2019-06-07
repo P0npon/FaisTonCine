@@ -1,5 +1,6 @@
 export class Genre {
   constructor(
-  	public idGenre: number
+    public idGenre: number,
+    public genre: string
   ) {}
 }

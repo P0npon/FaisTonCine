@@ -1,0 +1,21 @@
+<div class="card" style="margin-left: 50px; margin-right: 50px">
+  <div class="panel-body">
+    <div class="mid-width wrapItems">
+      <div *ngFor="let idee of idees" >
+        <div style="padding: 10px">
+          <div>
+            <h2 style="display: inline;">Titre: {{idee.titre}} </h2>
+            <p style="display: inline;">Date de création: {{idee.dateCreation | date:'medium'}} </p>
+            <p style="display: inline;">Genre: {{idee.genre.genre}} </p>
+            <p style="display: inline;">Type : {{idee.typeIdee.typeIdee}} </p>
+          </div>
+          <div class="card" style="padding: 10px">
+            <p>
+              {{idee.idee}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
