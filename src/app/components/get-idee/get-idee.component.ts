@@ -10,7 +10,7 @@ export class GetIdeeComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
 
-  private idees  = []; 
+  idees  = []; 
 
   get_idees(){
     this.httpClient.get('https://desolate-retreat-45764.herokuapp.com/idees').subscribe((res : any[])=>{

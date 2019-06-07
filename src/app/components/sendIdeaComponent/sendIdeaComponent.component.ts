@@ -18,8 +18,8 @@ export class SendIdeaComponent implements OnInit {
   selectedGenre = 1;
   selectedTypeIdee = 1;
 
-  private genres  = []; 
-  private typeIdees  = []; 
+  genres  = []; 
+  typeIdees  = []; 
 
   constructor(private formBuilder: FormBuilder,
               private ideeService: IdeeService,
