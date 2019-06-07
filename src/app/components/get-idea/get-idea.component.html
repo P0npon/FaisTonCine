@@ -4,10 +4,10 @@
         <div *ngFor="let idee of idees" >
           <div class="card" style="padding: 10px">
             <div>
-            <h2 style="display: inline;">titre: {{idee.titre}} </h2>
-            <p style="display: inline;">date de création: {{idee.dateCreation | date:'medium'}} </p>
-            <p style="display: inline;">genre: {{idee.genre.genre}} </p>
-            <p style="display: inline;">type : {{idee.typeIdee.typeIdee}} </p>
+            <h2 style="display: inline;">{{ 'get-idea.title' | translate }} {{idee.titre}} </h2>
+            <p style="display: inline;">{{ 'get-idea.creation-date' | translate }} {{idee.dateCreation | date:'medium'}} </p>
+            <p style="display: inline;">{{ 'get-idea.genre' | translate }} {{idee.genre.genre}} </p>
+            <p style="display: inline;">{{ 'get-idea.type' | translate }} {{idee.typeIdee.typeIdee}} </p>
             </div>
         <div class="card" style="padding: 10px">
         <p>

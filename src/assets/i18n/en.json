@@ -1,10 +1,10 @@
 {
     "hello-world": "hello world!",
     "header": {
-        "home": "accueil",
-        "my-scenario": "mes scénario",
-        "my-ideas": "mes idées",
-        "rate-scenario": "noter des scénario",
+        "home": "home",
+        "my-scenario": "my scenario",
+        "my-ideas": "my ideas",
+        "rate-scenario": "rate scenario",
         "admin": "admin",
         "login": "connexion",
         "contact": "contact"
@@ -16,11 +16,11 @@
         "tips": "scenario!"
     },
     "my-ideas": {
-        "tips": "mes idées!",
-        "comment-space": "espace commentaire"
+        "tips": "my ideas!",
+        "comment-space": "comment space"
     },
     "rate-scenario": {
-        "tips": "noter des scenario!"
+        "tips": "rate scenario!"
     },
     "contact": {
         "tips": "contact!"
@@ -29,17 +29,17 @@
         "tips": "admin!"
     },
     "get-idea": {
-        "title": "-- titre: ",
-        "creation-date": "-- date de création: ",
+        "title": "-- title: ",
+        "creation-date": "-- creation date: ",
         "genre": "-- genre: ",
         "type": "-- type: "
     },
     "send-idea": {
-        "title": "titre",
-        "idea": "idée",
+        "title": "title",
+        "idea": "idea",
         "genre": "genre",
-        "type": "type d'idée",
-        "submit": "soumettre"
+        "type": "idea type",
+        "submit": "submit"
     },
-    "switch-language": "passer en anglais"
+    "switch-language": "switch to french"
 }

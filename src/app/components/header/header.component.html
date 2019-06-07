@@ -1,33 +1,36 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">{{ 'ShowR' | translate | ucfirst}}</a>
+  <a class="navbar-brand" routerLink="/">{{ 'ShowR' | translate | ucfirst}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/">Accueil</a>
+        <a class="nav-link" routerLink="/">{{ 'header.home' | translate | ucfirst }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/mes-scenario">Mes Scénario</a>
+        <a class="nav-link" routerLink="/mes-scenario">{{ 'header.my-scenario' | translate | ucfirst }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/mes-idees">Mes idées</a>
+        <a class="nav-link" routerLink="/mes-idees">{{ 'header.my-ideas' | translate | ucfirst }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/evaluer-scenario">Noter des Scénario</a>
+        <a class="nav-link" routerLink="/evaluer-scenario">{{ 'header.rate-scenario' | translate | ucfirst }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/admin">Admin</a>
+        <a class="nav-link" routerLink="/admin">{{ 'header.admin' | translate | ucfirst }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">Contact</a>
+        <a class="nav-link" routerLink="/contact">{{ 'header.contact' | translate | ucfirst }}</a>
+      </li>
+      <li class="nav-item">
+        <ftc-switch-language></ftc-switch-language>
       </li>
     </ul>
   </div>
   <ul class="navbar-nav">
   <li class="nav-item">
-    <a class="nav-link" routerLink="/connexion">Connection</a>
+    <a class="nav-link" routerLink="/connexion">{{ 'header.login' | translate | ucfirst }}</a>
    </li>
 </ul>
 </nav>

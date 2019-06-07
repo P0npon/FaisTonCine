@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-get-idee',
-  templateUrl: './get-idee.component.html',
-  styleUrls: ['./get-idee.component.scss']
+  selector: 'ftc-get-idea',
+  templateUrl: './get-idea.component.html',
+  styleUrls: ['./get-idea.component.scss']
 })
-export class GetIdeeComponent implements OnInit {
+export class GetIdeaComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
 
