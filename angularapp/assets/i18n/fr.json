@@ -1,0 +1,26 @@
+{
+    "hello-world": "hello world!",
+    "header": {
+        "home": "fais ton ciné",
+        "login": "connexion",
+        "about": "à propos"
+    },
+    "login": {
+        "tips": "connexion!"
+    },
+    "scenario": {
+        "tips": "scenario!"
+    },
+    "my-ideas": {
+        "tips": "mes idées!"
+    },
+    "rate-scenario": {
+        "tips": "noter des scenario!"
+    },
+    "contact": {
+        "tips": "contact!"
+    },
+    "admin": {
+        "tips": "admin!"
+    }
+}
