@@ -19,6 +19,7 @@ export class IdeeService {
     console.log(idee);
     this.http.post('https://desolate-retreat-45764.herokuapp.com/idees',idee).subscribe(data => {
       console.log(data);
+      window.location.reload();
     });
   }
 }

@@ -89,7 +89,6 @@ export class SendIdeaComponent implements OnInit {
     );
     console.log(newIdee);
     this.ideeService.addIdee(newIdee);
-    window.location.reload();
   }
 
 }

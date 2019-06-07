@@ -16,6 +16,7 @@ export class GenreService {
     console.log(genre);
     this.http.post('https://desolate-retreat-45764.herokuapp.com/genres',genre).subscribe(data => {
       console.log(data);
+      window.location.reload();
     });
   }
 }

@@ -35,7 +35,6 @@ export class SendTypeIdeeComponent implements OnInit {
 
     console.log(newTypeIdee);
     this.typeIdeeService.addTypeIdee(newTypeIdee);
-    window.location.reload();
   }
 
 }

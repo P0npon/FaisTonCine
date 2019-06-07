@@ -35,7 +35,6 @@ export class SendGenreComponent implements OnInit {
 
     console.log(newGenre);
     this.genreService.addGenre(newGenre);
-    window.location.reload();
   }
 
 }
