@@ -1,4 +1,15 @@
-<div class="ftc-my-ideas-container">
-    <h1>{{ 'my-ideas.tips' | translate | ucfirst }}</h1>
-</div>
-<app-new-idee></app-new-idee>
+  <div class="container-fluid">
+    <div class="row">
+    <div id="right" class="col-sm-8">
+      <app-get-idee></app-get-idee>
+    </div>
+    <div id="left" class="col-sm-4">
+      <app-new-idee></app-new-idee>
+    </div>
+    <div id="down" class="col-sm-12">
+    	<div class="card" style="width: 100%;height: 100%;">
+    		 Espace commentaire
+    	</div>
+    </div>
+  </div>
+ </div>

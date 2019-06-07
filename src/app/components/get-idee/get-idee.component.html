@@ -1,21 +1,21 @@
-<div>
-  <h1>
-    Les idées existantes
-  </h1>
-
-  <ul>
-    <li *ngFor="let idee of idees" >
-      -- id: {{idee.idIdee}}
-      <br/>
-      -- date de création: {{idee.dateCreation | date:'medium'}}
-      <br/>
-      -- idée: {{idee.idee}}
-      <br/>
-      -- titre: {{idee.titre}}
-      <br/>
-      -- genre: {{idee.genre.genre}}
-      <br/>
-      -- type : {{idee.typeIdee.typeIdee}}
-    </li>
-  </ul> 
+<div class="card" style="width: 100%;height: 100%">
+  <div class="panel-body" style="overflow-y: scroll;">
+    <div class="mid-width wrapItems">
+        <div *ngFor="let idee of idees" >
+          <div class="card" style="padding: 10px">
+            <div>
+            <h2 style="display: inline;">titre: {{idee.titre}} </h2>
+            <p style="display: inline;">date de création: {{idee.dateCreation | date:'medium'}} </p>
+            <p style="display: inline;">genre: {{idee.genre.genre}} </p>
+            <p style="display: inline;">type : {{idee.typeIdee.typeIdee}} </p>
+            </div>
+        <div class="card" style="padding: 10px">
+        <p>
+        {{idee.idee}}
+        </p>
+      </div>
+        </div>
+        </div>
+    </div>
+  </div>
 </div>

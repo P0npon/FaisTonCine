@@ -1,25 +1,34 @@
-<div class="card col-sm-8 col-sm-offset-2">
+<div class="card" style="width: 100%;height: 100%;background-color: #a6afb7">
+  <div class="panel-body" style="overflow-y: scroll;">
+    <div class="mid-width wrapItems">
+
+<div style="width: 100%;height: 100%;padding: 10px;">
   <form [formGroup]="ideeForm" (ngSubmit)="onSubmitForm()">
     <div class="form-group">
-      <label for="title">Title</label>
+      <h4 for="title" style="text-align: center">Title</h4>
       <input type="text" id="title" class="form-control" formControlName="title">
     </div>
     <div class="form-group">
-      <label for="idee">Idee</label>
-      <input type="text" id="idee" class="form-control" formControlName="idee">
+      <h4 for="idee" style="text-align: center">Idee</h4>
+      <textarea style="height: 100px"id="idee" class="form-control" formControlName="idee"></textarea>
     </div>
     <div class="form-group">
-      <label for="genre">Genre</label>
-        <select (change)="selectChangeHandlerGenre($event)">
+      <h4 for="genre" style="text-align: center">Genre</h4>
+        <select class="form-control" (change)="selectChangeHandlerGenre($event)">
           <option *ngFor="let genre of genres" [value]="genre.idGenre">{{genre.genre}}</option>
         </select>
     </div>
     <div class="form-group">
-      <label for="typeIdee">Type idee</label>
-      <select (change)="selectChangeHandlerTypeIdee($event)">
+      <h4 for="typeIdee" style="text-align: center">Type idee</h4>
+      <select class="form-control" (change)="selectChangeHandlerTypeIdee($event)">
           <option *ngFor="let typeIdee of typeIdees" [value]="typeIdee.idTypeIdee">{{typeIdee.typeIdee}}</option>
         </select>
     </div>
+    <div style="text-align: center;">
     <button type="submit" class="btn btn-primary">Soumettre</button>
+    </div>
   </form>
+</div>
+</div>
+</div>
 </div>

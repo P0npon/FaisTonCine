@@ -15,8 +15,8 @@ import { HttpClient } from '@angular/common/http';
 export class SendIdeaComponent implements OnInit {
 
   ideeForm: FormGroup;
-  selectedGenre = 0;
-  selectedTypeIdee = 0;
+  selectedGenre = 1;
+  selectedTypeIdee = 1;
 
   private genres  = []; 
   private typeIdees  = []; 
@@ -87,7 +87,7 @@ export class SendIdeaComponent implements OnInit {
     );
     console.log(newIdee);
     this.ideeService.addIdee(newIdee);
-    this.router.navigate(['/']);
+    window.location.reload();
   }
 
 }
