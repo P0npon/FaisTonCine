@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { IdeeService } from 'src/app/services/IdeeService';
+import { Idee } from 'src/app/models/Idee.model';
 
 @Component({
   selector: 'ftc-get-idea',
@@ -8,19 +10,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GetIdeaComponent implements OnInit {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor( private ideeService: IdeeService,
+    private httpClient: HttpClient) { }
 
   idees  = []; 
 
-  get_idees(){
-    this.httpClient.get('https://desolate-retreat-45764.herokuapp.com/idees').subscribe((res : any[])=>{
-      console.log(res);
-      this.idees = res;
-      });
-  }
 
   ngOnInit() {
-    this.get_idees();
+    this.ideeService.get_idees((idees:Idee[])=>{
+      this.idees = idees;
+    });
   }
 
 }
