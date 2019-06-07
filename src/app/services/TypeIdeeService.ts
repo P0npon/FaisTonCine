@@ -16,6 +16,7 @@ export class TypeIdeeService {
     console.log(typeIdee);
     this.http.post('https://desolate-retreat-45764.herokuapp.com/typeIdees',typeIdee).subscribe(data => {
       console.log(data);
+      window.location.reload();
     });
   }
 }
