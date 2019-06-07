@@ -14,6 +14,13 @@ export class IdeeService {
   constructor(private http: HttpClient) { }
 
   ideeSubject = new Subject<Idee[]>();
+  get_idees(httpComplete:(idees:Idee[])=>void){
+    this.http.get('https://desolate-retreat-45764.herokuapp.com/idees').subscribe((res : any[])=>{
+      console.log(res);
+      this.idees = res;
+      httpComplete(this.idees)
+      });
+  }
 
   addIdee(idee: Idee) {
     console.log(idee);
